@@ -17,6 +17,19 @@ bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 ```
 
 ## 手动安装&升级
+### 手动安装v2ray
+```
+https://github.com/v2ray/v2ray-core/releases/tag/v4.22.1
+
+进入上面的 Github 地址，下载 v2ray 最新的 v2ray-linux-64.zip 文件，下载完成后将该文件上传至你的 VPS 里的 root 目录下。
+
+使用以下命令进行本地安装 v2ray，如果你将 v2ray-linux-64.zip 文件上传至了其它目录，那么需要将命令中的 /root/v2ray-linux-64.zip 替换为你实际的文件路径。
+```
+```
+bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --local /root/v2ray-linux-64.zip
+```
+
+### 手动安装x-ui
 1. 首先从 https://github.com/vaxilu/x-ui/releases 下载最新的压缩包，一般选择`amd64`架构
 2. 然后将这个压缩包上传到服务器的`/root/`目录下，并使用`root`用户登录服务器
 
